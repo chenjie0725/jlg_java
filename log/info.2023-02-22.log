@@ -1,0 +1,89 @@
+2023-02-22 16:35:59.197 [main] INFO  com.sankuai.inf.leaf.server.LeafServerApplication - Starting LeafServerApplication on JKOUCOARECXGVWQ with PID 4700 (C:\Users\Administrator\IdeaProjects\jlg\leaf-master-grpc\leaf-master-grpc\leaf-server\target\classes started by Administrator in C:\Users\Administrator\IdeaProjects\jlg\leaf-master-grpc\leaf-master-grpc)
+2023-02-22 16:35:59.197 [main] INFO  com.sankuai.inf.leaf.server.LeafServerApplication - The following profiles are active: sit
+2023-02-22 16:35:59.290 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+2023-02-22 16:35:59.915 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8002 (http)
+2023-02-22 16:35:59.915 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8002"]
+2023-02-22 16:35:59.931 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-02-22 16:35:59.931 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.35
+2023-02-22 16:36:00.009 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-02-22 16:36:00.009 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 781 ms
+2023-02-22 16:36:00.040 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2023-02-22 16:36:00.056 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2023-02-22 16:36:00.056 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2023-02-22 16:36:00.056 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2023-02-22 16:36:00.056 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2023-02-22 16:36:00.119 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2023-02-22 16:36:00.165 [main] INFO  com.sankuai.inf.leaf.segment.SegmentIDGenImpl - Init ...
+2023-02-22 16:36:00.165 [main] INFO  com.sankuai.inf.leaf.segment.SegmentIDGenImpl - update cache from db
+2023-02-22 16:36:00.572 [main] INFO  com.sankuai.inf.leaf.segment.SegmentIDGenImpl - Add tag a from db to IdCache, SegmentBuffer SegmentBuffer{key='a', segments=[Segment(value:0,max:0,step:0), Segment(value:0,max:0,step:0)], currentPos=0, nextReady=false, initOk=false, threadRunning=false, step=0, minStep=0, updateTimestamp=0}
+2023-02-22 16:36:00.572 [main] INFO  com.sankuai.inf.leaf.segment.SegmentIDGenImpl - Add tag b from db to IdCache, SegmentBuffer SegmentBuffer{key='b', segments=[Segment(value:0,max:0,step:0), Segment(value:0,max:0,step:0)], currentPos=0, nextReady=false, initOk=false, threadRunning=false, step=0, minStep=0, updateTimestamp=0}
+2023-02-22 16:36:00.572 [main] INFO  com.sankuai.inf.leaf.segment.SegmentIDGenImpl - Add tag c from db to IdCache, SegmentBuffer SegmentBuffer{key='c', segments=[Segment(value:0,max:0,step:0), Segment(value:0,max:0,step:0)], currentPos=0, nextReady=false, initOk=false, threadRunning=false, step=0, minStep=0, updateTimestamp=0}
+2023-02-22 16:36:00.572 [main] INFO  org.perf4j.TimingLogger - start[1677054960181] time[400] tag[updateCacheFromDb]
+2023-02-22 16:36:00.572 [main] INFO  com.sankuai.inf.leaf.server.service.SegmentService - Segment Service Init Successfully
+2023-02-22 16:36:00.572 [main] INFO  com.sankuai.inf.leaf.server.service.SnowflakeService - Zero ID Gen Service Init Successfully
+2023-02-22 16:36:00.681 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@29a5f4e7, started on Wed Feb 22 16:35:59 CST 2023
+2023-02-22 16:36:00.712 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/api/segment/get/{key}]}" onto public com.sankuai.inf.leaf.common.Result com.sankuai.inf.leaf.server.controller.LeafController.getSegmentId(java.lang.String)
+2023-02-22 16:36:00.712 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/cache]}" onto public java.lang.String com.sankuai.inf.leaf.server.controller.LeafMonitorController.getCache(org.springframework.ui.Model)
+2023-02-22 16:36:00.712 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/db]}" onto public java.lang.String com.sankuai.inf.leaf.server.controller.LeafMonitorController.getDb(org.springframework.ui.Model)
+2023-02-22 16:36:00.712 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/decodeSnowflakeId]}" onto public java.util.Map<java.lang.String, java.lang.String> com.sankuai.inf.leaf.server.controller.LeafMonitorController.decodeSnowflakeId(java.lang.String)
+2023-02-22 16:36:00.712 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2023-02-22 16:36:00.712 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2023-02-22 16:36:00.712 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2023-02-22 16:36:00.712 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2023-02-22 16:36:00.728 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2023-02-22 16:36:00.900 [main] INFO  org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2023-02-22 16:36:00.962 [main] INFO  net.devh.boot.grpc.server.serverfactory.AbstractGrpcServerFactory - Registered gRPC service: LeafSegmentService, bean: leafSegmentServiceGrpc, class: com.sankuai.inf.leaf.server.grpcService.LeafSegmentServiceGrpc
+2023-02-22 16:36:01.197 [main] INFO  net.devh.boot.grpc.server.serverfactory.GrpcServerLifecycle - gRPC Server started, listening on address: *, port: 8090
+2023-02-22 16:36:01.197 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8002"]
+2023-02-22 16:36:01.197 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2023-02-22 16:36:01.212 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8002 (http)
+2023-02-22 16:36:01.212 [main] INFO  com.sankuai.inf.leaf.server.LeafServerApplication - Started LeafServerApplication in 2.187 seconds (JVM running for 2.811)
+2023-02-22 16:37:00.587 [check-idCache-thread] INFO  com.sankuai.inf.leaf.segment.SegmentIDGenImpl - update cache from db
+2023-02-22 16:37:00.587 [check-idCache-thread] INFO  org.perf4j.TimingLogger - start[1677055020587] time[8] tag[updateCacheFromDb]
+2023-02-22 16:38:00.601 [check-idCache-thread] INFO  com.sankuai.inf.leaf.segment.SegmentIDGenImpl - update cache from db
+2023-02-22 16:38:00.601 [check-idCache-thread] INFO  org.perf4j.TimingLogger - start[1677055080601] time[4] tag[updateCacheFromDb]
+2023-02-22 16:39:00.620 [check-idCache-thread] INFO  com.sankuai.inf.leaf.segment.SegmentIDGenImpl - update cache from db
+2023-02-22 16:39:00.620 [check-idCache-thread] INFO  org.perf4j.TimingLogger - start[1677055140620] time[4] tag[updateCacheFromDb]
+2023-02-22 16:40:00.639 [check-idCache-thread] INFO  com.sankuai.inf.leaf.segment.SegmentIDGenImpl - update cache from db
+2023-02-22 16:40:00.639 [check-idCache-thread] INFO  org.perf4j.TimingLogger - start[1677055200639] time[4] tag[updateCacheFromDb]
+2023-02-22 16:52:13.884 [main] INFO  com.sankuai.inf.leaf.server.LeafServerApplication - Starting LeafServerApplication on JKOUCOARECXGVWQ with PID 8816 (C:\Users\Administrator\IdeaProjects\jlg\leaf-master-grpc\leaf-master-grpc\leaf-server\target\classes started by Administrator in C:\Users\Administrator\IdeaProjects\jlg\leaf-master-grpc\leaf-master-grpc)
+2023-02-22 16:52:13.886 [main] INFO  com.sankuai.inf.leaf.server.LeafServerApplication - The following profiles are active: sit
+2023-02-22 16:52:13.975 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+2023-02-22 16:52:14.586 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8002 (http)
+2023-02-22 16:52:14.600 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8002"]
+2023-02-22 16:52:14.608 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-02-22 16:52:14.609 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.35
+2023-02-22 16:52:14.679 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-02-22 16:52:14.679 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 768 ms
+2023-02-22 16:52:14.717 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2023-02-22 16:52:14.720 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2023-02-22 16:52:14.720 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2023-02-22 16:52:14.720 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2023-02-22 16:52:14.721 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2023-02-22 16:52:14.779 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2023-02-22 16:52:14.830 [main] INFO  com.sankuai.inf.leaf.segment.SegmentIDGenImpl - Init ...
+2023-02-22 16:52:14.830 [main] INFO  com.sankuai.inf.leaf.segment.SegmentIDGenImpl - update cache from db
+2023-02-22 16:52:15.240 [main] INFO  com.sankuai.inf.leaf.segment.SegmentIDGenImpl - Add tag a from db to IdCache, SegmentBuffer SegmentBuffer{key='a', segments=[Segment(value:0,max:0,step:0), Segment(value:0,max:0,step:0)], currentPos=0, nextReady=false, initOk=false, threadRunning=false, step=0, minStep=0, updateTimestamp=0}
+2023-02-22 16:52:15.240 [main] INFO  com.sankuai.inf.leaf.segment.SegmentIDGenImpl - Add tag b from db to IdCache, SegmentBuffer SegmentBuffer{key='b', segments=[Segment(value:0,max:0,step:0), Segment(value:0,max:0,step:0)], currentPos=0, nextReady=false, initOk=false, threadRunning=false, step=0, minStep=0, updateTimestamp=0}
+2023-02-22 16:52:15.240 [main] INFO  com.sankuai.inf.leaf.segment.SegmentIDGenImpl - Add tag c from db to IdCache, SegmentBuffer SegmentBuffer{key='c', segments=[Segment(value:0,max:0,step:0), Segment(value:0,max:0,step:0)], currentPos=0, nextReady=false, initOk=false, threadRunning=false, step=0, minStep=0, updateTimestamp=0}
+2023-02-22 16:52:15.240 [main] INFO  org.perf4j.TimingLogger - start[1677055934832] time[408] tag[updateCacheFromDb]
+2023-02-22 16:52:15.241 [main] INFO  com.sankuai.inf.leaf.server.service.SegmentService - Segment Service Init Successfully
+2023-02-22 16:52:15.243 [main] INFO  com.sankuai.inf.leaf.server.service.SnowflakeService - Zero ID Gen Service Init Successfully
+2023-02-22 16:52:15.346 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3fc79729, started on Wed Feb 22 16:52:13 CST 2023
+2023-02-22 16:52:15.375 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/api/segment/get/{key}]}" onto public com.sankuai.inf.leaf.common.Result com.sankuai.inf.leaf.server.controller.LeafController.getSegmentId(java.lang.String)
+2023-02-22 16:52:15.376 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/cache]}" onto public java.lang.String com.sankuai.inf.leaf.server.controller.LeafMonitorController.getCache(org.springframework.ui.Model)
+2023-02-22 16:52:15.376 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/decodeSnowflakeId]}" onto public java.util.Map<java.lang.String, java.lang.String> com.sankuai.inf.leaf.server.controller.LeafMonitorController.decodeSnowflakeId(java.lang.String)
+2023-02-22 16:52:15.376 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/db]}" onto public java.lang.String com.sankuai.inf.leaf.server.controller.LeafMonitorController.getDb(org.springframework.ui.Model)
+2023-02-22 16:52:15.377 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2023-02-22 16:52:15.378 [main] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2023-02-22 16:52:15.384 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2023-02-22 16:52:15.384 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2023-02-22 16:52:15.394 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2023-02-22 16:52:15.562 [main] INFO  org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2023-02-22 16:52:15.627 [main] INFO  net.devh.boot.grpc.server.serverfactory.AbstractGrpcServerFactory - Registered gRPC service: LeafSegmentService, bean: leafSegmentServiceGrpc, class: com.sankuai.inf.leaf.server.grpcService.LeafSegmentServiceGrpc
+2023-02-22 16:52:15.866 [main] INFO  net.devh.boot.grpc.server.serverfactory.GrpcServerLifecycle - gRPC Server started, listening on address: *, port: 8090
+2023-02-22 16:52:15.871 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8002"]
+2023-02-22 16:52:15.871 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2023-02-22 16:52:15.882 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8002 (http)
+2023-02-22 16:52:15.885 [main] INFO  com.sankuai.inf.leaf.server.LeafServerApplication - Started LeafServerApplication in 2.257 seconds (JVM running for 2.812)
+2023-02-22 16:52:35.663 [Thread-8] INFO  net.devh.boot.grpc.server.serverfactory.GrpcServerLifecycle - gRPC server shutdown.
