@@ -32,6 +32,7 @@ public class LeafSegmentServiceGrpc extends com.sankuai.inf.leaf.LeafSegmentServ
                 result = segmentService.getId(request.getKey(), request.getNum());
                 builder.setData(LeafResult.Data.newBuilder().addAllId(result.getIds()).build());
             }
+
         } catch (Exception e) {
             log.error("grpc服务异常：>>>", e);
             builder.setCode(-1).setSuccess(false).setMsg(e.getMessage());
