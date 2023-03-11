@@ -110,13 +110,6 @@
             <artifactId>apollo-client</artifactId>
             <version>2.1.0</version>
         </dependency>
-        <dependency>
-            <groupId>leaf</groupId>
-            <artifactId>HaiDianProto</artifactId>
-            <version>0.0.1</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/lib/leaf-grpc-0.0.1-SNAPSHOT.jar</systemPath>
-        </dependency>
 
     </dependencies>
     <build>
